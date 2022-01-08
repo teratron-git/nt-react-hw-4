@@ -2,7 +2,7 @@ import { useState } from "react"
 import st from "./Hex2rgb.module.css"
 
 const Hex2rgb = () => {
-  const [hex, setHex] = useState("#cccc")
+  const [hex, setHex] = useState("")
   const [result, setResult] = useState("")
 
   const hexHandler = (e: any) => {
@@ -26,7 +26,7 @@ const Hex2rgb = () => {
 
   return (
     <div className={st.container} style={hex.length === 7 ? { backgroundColor: hex } : {}}>
-      <input type="text" className={st.hex} value={hex} onChange={(e) => hexHandler(e)} maxLength={7} />
+      <input type="text" className={st.hex} value={hex} onChange={(e) => hexHandler(e)} maxLength={7} placeholder="#000000" />
       <div className={st.rgb} style={result === "ОШИБКА!" ? { backgroundColor: "red" } : {}}>
         {result}
       </div>

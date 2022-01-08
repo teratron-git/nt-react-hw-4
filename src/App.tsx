@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./App.css"
 import Hex2rgb from "./components/Hex2rgb"
+import Steps from "./components/Steps"
 import TaskSwitcher from "./components/TaskSwitcher"
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
 
       {task == "1" && <Hex2rgb />}
 
-      {task == "2" && <>Task 2</>}
+      {task == "2" && <Steps />}
 
       {task == "3" && <>Task 3</>}
     </>

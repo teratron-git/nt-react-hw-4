@@ -13,20 +13,23 @@
   height: 50px;
   line-height: 50px;
   text-align: center;
-  background-color: antiquewhite;
-  border: 1px solid grey;
   margin: 10px;
   outline: none;
+  border-radius: 10px;
 }
 
 .hex {
   font-size: 24px;
-  color: #000;
+  background-color: rgb(255, 255, 255, 0.5);
+  color: #000000;
   letter-spacing: 13px;
+  border: 1px solid #000000;
 }
 
 .rgb {
   font-size: 20px;
-  color: #000;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: #ffffff;
   letter-spacing: 2px;
+  border: 1px solid #ffffff;
 }

@@ -39,3 +39,13 @@ input::-webkit-inner-spin-button {
   align-self: center;
   margin-top: 50px;
 }
+.result ol {
+  padding: 0;
+}
+
+.result li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
